@@ -1,0 +1,27 @@
+package tandom;
+import java.util.Scanner;
+public class divisible {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+	
+		int []arr=new int[11];
+
+		//Array creation logic
+	
+		for(int i=0; i<=arr.length-1; i++) {
+			System.out.println("Enter the Array elelments"+i);
+			arr[i]=scan.nextInt();
+		}
+	
+		
+		for(int j=1; j<=9; j++) 
+		{
+		for(int i=0; i<=arr.length-1; i++) {
+			System.out.println("devisible by "+j);
+			if (arr[i]%j==0)
+				System.out.println(arr[i]+", ");
+		}
+		}
+	}
+}
